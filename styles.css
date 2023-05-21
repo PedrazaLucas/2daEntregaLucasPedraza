@@ -41,6 +41,7 @@ html {
 }
 
 .scale:hover {
+    transition: 0.9s;
   transform: scale(1.5);
 }
 

@@ -1,285 +1,293 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-html{scroll-behavior: smooth;}
-/* body{
-background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,32,63,1) 31%, rgba(83,120,149,1) 100%);
-} */
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* HEADER */
-
-header{
-    background-color: #5a7dac;
-    width: 100%;
-    height: 100px;
-    position: sticky;
-    top: 0;
-    display: flex;
-    z-index: 1;
+.navbar-brand {
+  font-size: 25px;
+  margin-left: 30px;
 }
 
-.logo{
-    width: 50%;
-    height: 100%;   
-    padding: 20px;
+#navbarNav {
+  justify-content: right;
 }
 
-.logo-img{
-    width: auto;
-    height: 75px;
+.nav-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000 !important;
 }
 
-.container-barra{
-    display: inline;
-    justify-content: center;
-    width: auto;
-    height: 100%;
-    font-size: 20px;
-    margin-top: 35px;
-    text-align: center;
-}
-
-.barra li{
-    list-style: none;
-    display: inline;
-    justify-content: center;
-}
-
-.barra a{
-    text-decoration: none;
-    color: #fff;
-    padding: 5px;
-}
-
-.barra a:hover{
-    background-color: #333;
+.nav-link:hover {
+  color: #fff !important;
 }
 
 /* MAIN */
-
- .main-home{
-    height: 80vh;
-    width: 100%;
-     background-color: #333;
-    background-image: url(./assets/anupam-mahapatra-Vz0RbclzG_w-unsplash.jpg);
-    background-size: cover;
-    background-position: left; 
-} 
-
-h1{
-    color: #000;
-    text-align: center;
-    margin: 30px;
+.main-home {
+  height: 50vh;
+  width: 100%;
+  background-color: #333;
+  background-image: url(./assets/anupam-mahapatra-Vz0RbclzG_w-unsplash.jpg);
+  background-size: cover;
+  background-position: left;
 }
 
-h2{
-    text-align: center;
-}
-h3{
-    text-align: center;
-}
-section{
-    margin-left: 60px;
+.scale:hover {
+  transform: scale(1.5);
 }
 
-.cont1 div{
-    display: inline-block;
-    width: 20%;
+.section-cat {
+  margin-top: 20px;
 }
 
-.item{
-    margin: 30px;
+.ofer {
+  width: 90%;
 }
 
-/* SECTIONS */
-.conteiner-section{
-    width: 80%;
-    height: 100%;
-    display: flex;
+article img {
+  height: 300px;
 }
 
-.section-cat{
-    margin-top: 20px;
+section a {
+  border: 2px solid black;
+  margin-top: 30px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #5a7dac;
+  padding: 10px 20px;
+  margin-left: 50px;
 }
 
-.texto-section{
-    display: block;
-    padding: 70px;
-    width: 30%;
-    height: 30%;
-    border: 3px solid #5a7dac;
-    border-radius: 50%;
+section a:hover {
+  background-color: #333;
 }
 
-.ofer{
-    width: 90%;
-}
-
-.texto-section p{
-    padding: 20px;
-}
-
-article {
-    height: 500px;
-}
-
-article img{
-    height: 500px;
-}
-
-section a{
-    border: 2px solid black;
-    margin-top: 30px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #5a7dac;
-    padding: 10px 20px;
-    
-    margin-left: 50px;
-}
-
-section a:hover{
-    background-color: #333;
-}
 /* MAIN CATEOGRY */
-
-.main-category{
-    width: 100%;
-    height: 70vh;
+.main-category {
+  width: 100%;
+  height: auto;
 }
 
 /* MUJER */
-.conteiner-mujer{
-    width: fit-content;
-    display: flex;
-}
-
-.conteiner-mujer img{
-    height: 300px;
-}
-
-.item-category{
-    display: flex;
-    justify-content: center;
+.item-category {
+  display: flex;
+  justify-content: center;
 }
 
 /* MAIN FAQS */
-.main-faqs{
-    width: 100%;
-    height: 70vh;
+.main-faqs {
+  width: 100%;
+  height: 100%;
 }
 
-.contacto{
-    height: 100vh;
-    width: 100%;
-    background-color: #333;
-    background-image: url(../assets/faqs/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg);
-    background-size: cover;
-    background-position: left;
-
+.contacto {
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+  background-image: url(../assets/faqs/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg);
+  background-size: cover;
+  background-position: left;
 }
 
 /* FORM CONTACTO */
-.form{
-    display: grid;
-    width: 30%;
-    padding: 20px
+.boton {
+  margin: 5px;
+  width: 20%;
+  height: 35px;
 }
 
-.form label{
-    margin: 5px;
-    font-size: 25px;
-    color: #fff;
+.boton:hover {
+  background-color: #333;
+  color: #fff;
 }
 
-.form input{
-    width: 75%;
-    height: 30px;
-}
-.form button{
-    margin: 5px;
-    width: 20%;
-    height: 35px;
+.titulo-redes {
+  color: #000;
+  text-align: left;
+  margin-top: 100px;
 }
 
-.form button:hover{
-    background-color: #333;
-    color: #fff;
+.form-control {
+  width: 30%;
 }
-
-.titulo-redes{
-    color: #fff;
-    text-align: left;
-}
-
 
 /* MAIN POLITICAS*/
-.item-pol h2{
-    padding: 20px;
+.back-to-menu {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./assets/photo-1549060279-7e168fcee0c2.avif);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
 }
-.item-pol p{
-    padding: 10px;
+
+.back-to-menu a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  width: 10%;
+  margin: 10px;
+}
+
+.back-to-menu a:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 50px 50px;
 }
 
 /* FOOTER INDEX */
-
-.footer-main{
-    width: 100%;
-    height: 20vh;
-    background-color: #5a7dac;
-    display: flex;
-    z-index: 1;
-    margin-top: 30px;
+.footer-main {
+  width: 100%;
+  height: auto;
+  background-color: #0d6efd;
+  display: flex;
+  z-index: 1;
 }
 
-.footer-faqs{
-    width: 100%;
-    height: 20vh;
-    background-color: #5a7dac;
-    display: flex;
-    z-index: 1;
+.footer-faqs {
+  width: 100%;
+  height: auto;
+  background-color: #5a7dac;
+  display: flex;
+  z-index: 1;
 }
 
-
-.footer1{
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    margin-top: 10px;
-}
-.footer1 li{
-    list-style: none;
-    text-align: center;
-    margin: 7px;
-}
-.footer1 a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    
+.footer1 {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin-top: 10px;
 }
 
-.footer1 a:hover{
-    background-color: #333;
+.footer1 li {
+  list-style: none;
+  text-align: center;
+  margin: 7px;
 }
 
-.footer2{
-    text-align: center;
-    padding: 10px;
+.footer1 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
 }
 
-.logo-footer{
-    height: 100%;
-    width: 70%;
+.footer1 a:hover {
+  color: #000;
 }
 
-.footer3{
-    display: flex;
-    justify-content: end;
-    align-items: end;
+.logo-footer {
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #000;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
+.logo-footer:hover {
+  color: #000;
+}
+
+.banner-category {
+  width: 100%;
+  height: 40vh;
+  background-image: url(./assets/fondo-main.jpg);
+  background-size: cover;
+}
+
+.banner-category-niños {
+  width: 100%;
+  height: 40vh;
+  background-image: url(./assets/las-ventajas-de-que-los-ninos-practiquen-deporte-desde-pequenos-655x368.jpg);
+  background-size: cover;
+}
+
+.banner-category-mujer {
+  width: 100%;
+  height: 40vh;
+  background-image: url(./assets/mujer/photo-1579722820903-01d3e776f85e.avif);
+  background-size: cover;
+}
+
+.oferta {
+  text-decoration: line-through;
+  color: red;
+}
+
+/* TITULOS */
+.titulo-principal {
+  color: #000;
+  text-align: center;
+  margin: 50px;
+  padding: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  border: 2px solid red;
+  border-radius: 50px 50px;
+}
+
+.titulo-category {
+  text-align: center;
+  margin: 50px;
+}
+
+h4 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+}
+
+.info-card {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./assets/135638461-vista-panorámica-de-diferentes-balones-deportivos-y-equipos-sobre-superficie-negra.webp);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+}
+
+.info-card p {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.info-card a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.info-card a:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-radius: 50px 50px;
+}/*# sourceMappingURL=styles.css.map */

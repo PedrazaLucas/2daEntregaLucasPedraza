@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{scroll-behavior: smooth;}
+
+/* HEADER */
+.navbar-brand{
+    font-size: 25px;
+    margin-left: 30px;
+}
+#navbarNav{
+    justify-content: right;
+}
+.nav-link{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000 !important;
+}
+.nav-link:hover{
+    color: #fff !important;
+}
+
+/* MAIN */
+.main-home{
+    height: 50vh;
+    width: 100%;
+    background-color: #333;
+    background-image: url(./assets/anupam-mahapatra-Vz0RbclzG_w-unsplash.jpg);
+    background-size: cover;
+    background-position: left; 
+} 
+
+.scale:hover{
+    transform: scale(1.5);
+}
+
+.section-cat{
+    margin-top: 20px;
+}
+.ofer{
+    width: 90%;
+}
+article img{
+    height: 300px;
+}
+section a{
+    border: 2px solid black;
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #5a7dac;
+    padding: 10px 20px;
+    
+    margin-left: 50px;
+}
+section a:hover{
+    background-color: #333;
+}
+
+/* MAIN CATEOGRY */
+.main-category{
+    width: 100%;
+    height: auto;
+}
+
+/* MUJER */
+.item-category{
+    display: flex;
+    justify-content: center;
+}
+
+/* MAIN FAQS */
+.main-faqs{
+    width: 100%;
+    height: 100%;
+}
+.contacto{
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    background-image: url(../assets/faqs/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg);
+    background-size: cover;
+    background-position: left;
+
+}
+
+/* FORM CONTACTO */
+.boton{
+    margin: 5px;
+    width: 20%;
+    height: 35px;
+}
+.boton:hover{
+    background-color: #333;
+    color: #fff;
+}
+.titulo-redes{
+    color: #000;
+    text-align: left;
+    margin-top: 100px;
+}
+.form-control{
+    width: 30%;
+}
+
+
+/* MAIN POLITICAS*/
+.back-to-menu{
+    width: 100%;
+    height: 50vh;
+    background-image: url(./assets/photo-1549060279-7e168fcee0c2.avif);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+
+.back-to-menu a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    width: 10%;
+    margin: 10px;
+}
+
+.back-to-menu a:hover{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border:1px solid #fff;
+    border-radius: 50px 50px;
+}
+
+/* FOOTER INDEX */
+.footer-main{
+    width: 100%;
+    height: auto;
+    background-color: #0d6efd;
+    display: flex;
+    z-index: 1;
+}
+
+.footer-faqs{
+    width: 100%;
+    height: auto;
+    background-color: #5a7dac;
+    display: flex;
+    z-index: 1;
+}
+
+.footer1{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin-top: 10px;
+}
+.footer1 li{
+    list-style: none;
+    text-align: center;
+    margin: 7px;
+}
+.footer1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+.footer1 a:hover{
+    color: #000;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.logo-footer:hover{
+    color: #000;
+}
+
+.banner-category{
+    width: 100%;
+    height: 40vh;
+    background-image: url(./assets/fondo-main.jpg);
+    background-size: cover;
+}
+
+.banner-category-niños{
+    width: 100%;
+    height: 40vh;
+    background-image: url(./assets/las-ventajas-de-que-los-ninos-practiquen-deporte-desde-pequenos-655x368.jpg);
+    background-size: cover;
+}
+
+.banner-category-mujer{
+    width: 100%;
+    height: 40vh;
+    background-image: url(./assets/mujer/photo-1579722820903-01d3e776f85e.avif);
+    background-size: cover;
+}
+
+.oferta{
+    text-decoration: line-through;
+    color: red;
+}
+
+/* TITULOS */
+.titulo-principal{
+    color: #000;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    border: 2px solid red;
+    border-radius: 50px 50px;
+}
+.titulo-category{
+    text-align: center;
+    margin: 50px;
+}
+
+h4{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+h6{
+    text-align: center;
+}
+
+.info-card{
+    width: 100%;
+    height: 50vh;
+    background-image: url(./assets/135638461-vista-panorámica-de-diferentes-balones-deportivos-y-equipos-sobre-superficie-negra.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+
+.info-card p{
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.info-card a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.info-card a:hover{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border:1px solid #fff;
+    border-radius: 50px 50px;
+}
